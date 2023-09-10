@@ -19,7 +19,7 @@
   },
   "monitors": [
     {
-      "id": "cms-jstubenrauch-de",
+      "id": "cms-jstubenrauch-dea",
       "name": "cms.jstubenrauch.de",
       "description": "CMS jstubenrauch.",
       "url": "https://cms.jstubenrauch.de/admin/login",
