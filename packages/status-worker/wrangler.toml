@@ -8,7 +8,7 @@ compatibility_date = "2022-05-20"
 # ]
 
 # Run `wrangler publish --env production` when happy
-# [env.production]
-# kv_namespaces = [
-#    { binding = "KV_STATUS_PAGE", id = "817c36c380ae427692fe7d879d924322" }
-# ]
+[env.production]
+ kv_namespaces = [
+    { binding = "KV_STATUS_PAGE", id = "5d308613ecd148bfa0ee7febb6d03b22" }
+ ]
