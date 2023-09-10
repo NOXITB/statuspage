@@ -34,8 +34,8 @@ jobs:
           [ -z "$KV_NAMESPACE_STATUS" ] && npx wrangler kv:namespace create KV_STATUS_PAGE1
           [ -z "$KV_NAMESPACE_STATUS" ] && npx wrangler kv:namespace create KV_STATUS_PAGE1 --preview
           export KV_NAMESPACE_ID=$(npx wrangler kv:namespace list | jq '.[] | select(.title=="KV_STATUS_PAGE1") .id')
-          export KV_NAMESPACE_ID_PREVIEW=$(npx wrangler kv:namespace list | jq '.[] | select(.title=="KV_STATUS_PAGE_preview") .id')
-          echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE1\", id=2f729dd2c704499bae40071bd18da074, preview_id=${KV_NAMESPACE_ID_PREVIEW}}]" >> wrangler.toml
+          export KV_NAMESPACE_ID_PREVIEW=$(npx wrangler kv:namespace list | jq '.[] | select(.title=="KV_STATUS_PAGE1_preview") .id')
+          echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE1\", id=${KV_NAMESPACE_ID}, preview_id=${KV_NAMESPACE_ID_PREVIEW}}]" >> wrangler.toml
           echo "[triggers]" >> wrangler.toml
           echo "crons = [\"*/5 * * * *\"]" >> wrangler.toml
           wrangler publish
