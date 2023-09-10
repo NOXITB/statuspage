@@ -21,7 +21,7 @@
     {
       "id": "cms-jstubenrauch-de",
       "name": "cms.jstubenrauch.de",
-      "description": "CMS jstubenrauch.1",
+      "description": "CMS jstubenrauch.",
       "url": "https://cms.jstubenrauch.de/admin/login",
       "method": "GET",
       "expectStatus": 200,
