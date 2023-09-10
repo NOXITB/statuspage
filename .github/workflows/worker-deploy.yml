@@ -30,7 +30,7 @@ jobs:
           [ -z ${{secrets.SECRET_TELEGRAM_API_TOKEN}} ] && echo ${{secrets.SECRET_TELEGRAM_API_TOKEN}} | npx wrangler secret put "SECRET_TELEGRAM_API_TOKEN"
           [ -z ${{secrets.SECRET_TELEGRAM_CHAT_ID}} ] && echo ${{secrets.SECRET_TELEGRAM_CHAT_ID}} | npx wrangler secret put "SECRET_TELEGRAM_CHAT_ID"
           [ -z ${{secrets.SECRET_DISCORD_WEBHOOK_URL}} ] && echo ${{secrets.SECRET_DISCORD_WEBHOOK_URL}} | npx wrangler secret put "SECRET_DISCORD_WEBHOOK_URL"
-          export KV_NAMESPACE_ID=$(npx wrangler kv:namespace list | jq '.[] | select(.title=="KV_STATUS_PAGE") .id')
+          export KV_NAMESPACE_ID=5d308613ecd148bfa0ee7febb6d03b22
           echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"${KV_NAMESPACE_ID}\"}]" >> wrangler.toml
           echo "[triggers]" >> wrangler.toml
           echo "crons = [\"*/5 * * * *\"]" >> wrangler.toml
