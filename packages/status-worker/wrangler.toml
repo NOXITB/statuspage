@@ -3,9 +3,9 @@ main = "./src/index.ts"
 compatibility_date = "2022-05-20"
 
 # Duplicate preview_id to id
-# kv_namespaces = [
-#    { binding = "KV_STATUS_PAGE", preview_id = "3d8acb80aa6641f5822b3596dd305588", id = "3d8acb80aa6641f5822b3596dd305588" }
-# ]
+ kv_namespaces = [
+    { binding = "KV_STATUS_PAGE", preview_id = "5d308613ecd148bfa0ee7febb6d03b22" }
+ ]
 
 # Run `wrangler publish --env production` when happy
 [env.production]
