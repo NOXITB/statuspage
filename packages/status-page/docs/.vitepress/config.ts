@@ -1,5 +1,5 @@
-import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vitepress'
+import Components from 'unplugin-vue-components/vite'
 // import { version } from '../../package.json'
 
 const statusPageName = 'Status Page'
@@ -50,10 +50,10 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © since 2022',
+      copyright: 'Copyright © since 2022 Jan Stubenrauch',
     },
     socialLinks: [
-      { icon: 'github', link: '' },
+      { icon: 'github', link: 'https://github.com/stubijs/statuspage/' },
     ],
   },
   vite: {
